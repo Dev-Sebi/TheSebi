@@ -53,7 +53,79 @@ Colors:
 	background: #5865F2; 
 	border-radius: 5px;
   }
+/**************************/
+/*		Typewriter		  */
+/**************************/
 
+  /* Typewriter effect 1 */
+  @keyframes typing {
+	0.0000%, 27.0000% { content: ""; }
+	1.0000%, 26.0000% { content: "a"; }
+	2.0000%, 25.0000% { content: "a "; }
+	3.0000%, 23.0000% { content: "a D"; }
+	4.0000%, 22.0000% { content: "a De"; }
+	5.0000%, 21.0000% { content: "a Dev"; }
+	6.0000%, 20.0000% { content: "a Deve"; }
+	7.0000%, 19.0000% { content: "a Devel"; }
+	9.0000%, 18.0000% { content: "a Develo"; }
+	10.0000%, 17.0000% { content: "a Develop"; }
+	11.0000%, 16.0000% { content: "a Develope"; }
+	12.0000%, 15.0000% { content: "a Developer"; }
+  
+	50.0000%, 80.0000% { content: ""; }
+	51.0000%, 79.0000% { content: "S"; }
+	52.0000%, 78.0000% { content: "Se"; }
+	53.0000%, 77.0000% { content: "Seb"; }
+	54.0000%, 76.0000% { content: "Sebi"; }
+	55.0000%, 75.0000% { content: "Sebi 😊"; }
+  }
+  
+  @keyframes blink {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0; }
+  }
+  
+  .typewriter {
+	--caret: currentcolor;
+  }
+  
+  .typewriter::before {
+	content: "";
+	animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+	content: "";
+	border-right: 1px solid var(--caret);
+	animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+	border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+	border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+	.typewriter::after {
+	  animation: none;
+	}
+	
+	@keyframes sequencePopup {
+	  0%, 100% { content: "developer"; }
+	  25% { content: "writer"; }
+	  50% { content: "reader"; }
+	  75% { content: "human"; }
+	}
+  
+	.typewriter::before {
+	  content: "developer";
+	  animation: sequencePopup 12s linear infinite;
+	}
+  }
 
 /**************************/
 /*     General Styles     */
@@ -559,7 +631,7 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.gif') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.png') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -663,6 +735,7 @@ input[type='checkbox'] {
 /*******************/
 .split .area-1 {
 	height: 430px;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/profile.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -792,6 +865,7 @@ input[type='checkbox'] {
 	padding: 0;
 	text-align: center;
 	background-color: #23272A;
+	color: #ffffff
 }
 
 .cards-1 .testimonial-text {
@@ -878,6 +952,7 @@ input[type='checkbox'] {
 
 .accordion-1 .card-body {
 	padding: 0.75rem 1.5rem 0.5rem 1.5rem;
+	color: #ffffff
 }
 
 
@@ -903,6 +978,12 @@ input[type='checkbox'] {
 /******************/
 /*     Footer     */
 /******************/
+
+.upscroll {
+	background: #3a424d url("../images/up-arrow.png") no-repeat 47%;
+	border-radius: 30px;
+}
+
 .footer {
 	padding-top: 6.25rem;
 	padding-bottom: 2rem;
@@ -1203,6 +1284,7 @@ a:hover.back-to-top {
 
 	.cards-1 .card-body {
 		text-align: left;
+		color: #ffffff
 	}
 
 	.card-body {

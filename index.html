@@ -40,7 +40,7 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
+<body data-spy="scroll" data-target=".fixed-top" id="top">
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -120,7 +120,7 @@
     <div id="about" class="basic-1 bg-gray">
         <div class="container">
             <div class="row">
-                <h2>Hi there I'm Sebi,</h2>
+                <h2 aria-label="Hi! I'm a developer">Hi! I'm <span class="typewriter"></span></h2>
                 <p>Currently Im <a id="age"></a> Years old, born and living in Germany. I started coding back in 2015 with a good friend, back then it was basic HTML and CSS, we both didn't have a clue how JavaScript, Bootstrap or other things worked but rather just experimented with the knowledge we had. About 2 Years later I started to develop Discord bots with something similar to Scratch, not exactly coding, but you get the idea on how it works aka Javascript ~ it suddenly became easy to understand and I don't know why. I also started to take a deeper look into Bootstrap and how things work in the general coding / Programming scene. With 17 Years old (2019) I started an apprenticeship as an it system electronics technician, and will be finished Jul 2022. When I was new in the apprenticeship, I started to learn C++ in school, after a year switched schools and then learned C# and the basics of Java. With this knowladge on "real" Programming (not HTML or CSS) I started to become very interested in JavaScript again, and I really fast understood how it works and how to use it. Starting back in middle 2020 I developed my first own Online Websocket Chatting site (similar to Discord) with HTML, CSS (Bootstrap) and PHP, soon to find out all I've build was easy to exploitable (for example to XSS attacks), then got unmotivated very fast. BUT the same speed I got unmotivated I started to get motivated again after I heard about Node.js (yes don't blame me, that I didn't know earlier), starting with Node.js, Express, Socket.io and fresh Motivation, recoded the whole Project called Sepma.net. The Motivation had reached its peek and fell again, but with the knowladge I've earned, started to develop Discord bots again and here Iam now ~ Not the best but nobody can know everything 😊.</p>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -130,21 +130,32 @@
     <!-- Details -->
 	<div class="split">
 		<div class="area-1">
+            <div></div>
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
             <div class="container">    
                 <div class="row">
                     <div class="col-lg-12">     
-                        
                         <!-- Text Container -->
                         <div class="text-container">
-                            <h5>AWARDS</h5>
+                            <h5>🏆 AWARDS</h5>
                             <ul>
                                 <li>Discord Verified Bot Developer</li>
                                 <li>2 Verified Discord Bots</li>
-                            </ul>  
-                            <h5>DEVELOPMENT SKILLS</h5>
+                            </ul>
+                            <h5>🔨 SOFTWARE</h5>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Visual Studio</li>
+                                <li>Node.js</li>
+                                <li>HCL Notes</li>
+                                <li>MariaDB</li>
+                                <li>GitHub</li>
+                                <li>Discord</li>
+                                <li>Linux / Windows</li>
+                                <li>Udemy</li>
+                            </ul>
+                            <h5>🤖 DEVELOPMENT SKILLS</h5>
                             <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
-                            
                             <div class="icons-container">
                                 <img src="images/details-icon-html.png" data-toggle="tooltip" data-placement="bottom" title="HTML5" alt="alternative">
                                 <img src="images/details-icon-css.png" data-toggle="tooltip" data-placement="bottom" title="CSS3" alt="alternative">
@@ -225,6 +236,7 @@
     <!-- Servers -->
     <div class="basic-4">
         <div class="container">
+            <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="text-container">
@@ -243,7 +255,7 @@
                                 <img class="img-fluid" src="images/banner2.png" alt="">
                             </a>
                         </div>
-                        <p><b>Server:</b> Velithora <br> A Small friendly Community, where oyu can play games with each other.</p>
+                        <p><b>Server:</b> Velithora <br> A Small friendly Community, where you can play games with each other.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -338,7 +350,7 @@
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    I actually do use a Template, not a random one, but rather one I made by myself. If you want to check it out the template, click <a class="blue no-line" href="https://github.com/Dev-Sebi/discord-bot-template-v13">here</a>.
+                                    I actually do use a Template, not a random one, but rather one I made by myself. If you want to check out the template, click <a class="blue no-line" href="https://github.com/Dev-Sebi/discord-bot-template-v13">here</a>.
                                 </div>
                             </div>
                         </div>
@@ -357,7 +369,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email: <a class="blue no-line" href="mailto:sebi@thread-manager.com" data-toggle="tooltip" data-placement="bottom" title="Click me!">sebi@thread-manager.com</a></p>
+                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email: <a class="blue no-line" href="mailto:sebi@thesebi.dev" data-toggle="tooltip" data-placement="bottom" title="Click me!">sebi@thesebi.dev</a></p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -368,6 +380,10 @@
     <!-- Footer -->
     <div class="footer bg-gray">
         <div class="container">
+            <div class="col-lg-12">
+                <a class="upscroll btn-solid-lg page-scroll" href="#top"></a>
+            </div>
+            <br>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="social-container">
@@ -413,7 +429,6 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright bg-gray">
         <div class="container">
@@ -423,7 +438,7 @@
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
